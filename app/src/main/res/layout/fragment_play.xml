@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    card_view:cardElevation="4dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="20sp"
+            android:text="Choose Client's Name"
+            android:textColor="@color/colorDark"/>
+        <!---->
+
+        <Spinner
+            android:id="@+id/spinnerName"
+            style="@style/MySpinnerLook"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:dropDownWidth="wrap_content"
+            android:entries="@array/names"
+            android:fontFamily="@font/roboto_mono"
+            android:spinnerMode="dropdown"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="20sp"
+            android:text="Choose Category"
+            android:textColor="@color/colorDark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/anxiety"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:enabled="true"
+                android:fontFamily="@font/roboto_mono"
+                android:text="Anxiety"
+
+                android:theme="@style/PrimaryFlatButton" />
+
+            <Button
+                android:id="@+id/anger"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:enabled="true"
+                android:fontFamily="@font/roboto_mono"
+                android:text="Anger"
+                android:theme="@style/PrimaryFlatButton" />
+            <Button
+                android:id="@+id/post_traumatic_stress"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Post Traumatic Stress"
+                android:theme="@style/PrimaryFlatButton"
+                android:fontFamily="@font/roboto_mono"
+                android:enabled="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/dissociation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Dissociation"
+                android:theme="@style/PrimaryFlatButton"
+                android:fontFamily="@font/roboto_mono"
+                android:enabled="true" />
+            <Button
+                android:id="@+id/sexual_concerns"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Sexual Concerns"
+                android:theme="@style/PrimaryFlatButton"
+                android:fontFamily="@font/roboto_mono"
+                android:enabled="true" />
+
+            <Button
+            android:id="@+id/wild_card"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Wild Card"
+            android:theme="@style/PrimaryFlatButton"
+            android:fontFamily="@font/roboto_mono"
+            android:enabled="true"
+            />
+        </LinearLayout>
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+
+    android:id="@+id/catSelected"/>
+        <Button
+            android:id="@+id/Play"
+            android:layout_marginTop="32dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_mono"
+            android:textColor="#ffffff"
+            android:background="@color/button"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+

@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Therapeutic Game</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Game for CSA</string>
+    <string name="title_activity_login2">Sign in</string>
+
+    <string name="nav_header_subtitle"></string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Play</string>
+    <string name="menu_gallery">Add Clients</string>
+    <string name="menu_slideshow">Existing Clients</string>
+    <string name="menu_tools">Write Letter</string>
+    <string name="Mindfulness">Mindfulness</string>
+    <string name="menu_send">Send</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="welcomeNote">Welcome to Therapeutic Game!!!</string>
+    <string name="Request">Please Register for the first time user.</string>
+    <string name="full_name">Full Name</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_register">Register</string>
+    <string name="action_sign_in_short">Log in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="action_sign_in">Log In</string>
+
+    <string name="DearMe">Dear Me,</string>
+    <string name="textMessage">type message here...</string>
+    <string name="textTo">email address!</string>
+
+    <string name="question">How do you know when you feel worried?</string>
+
+    <string-array name="categories">
+        <item>Anxiety</item>
+        <item>Anger</item>
+        <item>Post Traumatic Stress</item>
+        <item>Dissociation</item>
+        <item>Sexual Concerns</item>
+        <item>Wild Card</item>
+    </string-array>
+
+
+    <string-array name="names">
+        <item>Select a Category</item>
+        <item>Anxiety</item>
+        <item>Anger</item>
+        <item>Post Traumatic Stress</item>
+        <item>Dissociation</item>
+        <item>Sexual Concern</item>
+
+
+    </string-array>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#43CFEC</color>
+    <color name="colorPrimaryDark">#009eba</color>
+
+
+    <color name="analogus1">#e0af1f</color>
+    <color name="analogus2">#33cc5a</color>
+
+    <color name="colorAccent">#82ffff</color>
+
+    <color name="colorLight">#82ffff</color>
+    <color name="colorDark">#009eba</color>
+    <color name="colorLightest">#E1F5FE</color>
+    <color name="white">#FFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#c2c5cc</color>
+
+
+    <color name="important">#33691e</color>
+
+    <color name="button1">#ff0266</color>
+    <color name="button">#FDD835</color>
+
+    <color name="yellow">#FDD835</color>
+    <color name="yellow_dark">#B89C0A</color>
+    <color name="blue">#5868C9</color>
+    <color name="blue_dark">#2539B3</color>
+    <color name="red">#CA5858</color>
+    <color name="red_dark">#B31111</color>
+    <color name="green">#6CCE61</color>
+    <color name="green_dark">#228B0F</color>
+
+
+</resources>

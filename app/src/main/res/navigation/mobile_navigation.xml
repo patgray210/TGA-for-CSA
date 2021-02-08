@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_play">
+
+    <fragment
+        android:id="@+id/nav_play"
+        android:name="com.example.final_check.ui.Play_Fragment.Play_fragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_play" />
+
+    <fragment
+        android:id="@+id/nav_add_patients"
+        android:name="com.example.final_check.ui.Add_pateint_fragment.Add_patients_fragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_add_patient" />
+
+    <fragment
+        android:id="@+id/nav_existing_patients"
+        android:name="com.example.final_check.ui.Existing_patient_fragment.Existing_patient_fragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_write_letter"
+        android:name="com.example.final_check.DearMeLetter"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_dear_me_letter" />
+
+    <fragment
+        android:id="@+id/nav_mindfulness"
+        android:name="com.example.final_check.ui.share.Mindfulness"
+        android:label="@string/Mindfulness"
+        tools:layout="@layout/fragment_mindfulness" />
+
+
+</navigation>

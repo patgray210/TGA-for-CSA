@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:paddingBottom="18dp"
+        android:src="@drawable/logo_small"
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcomeNote"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:textSize="20sp"
+        android:paddingBottom="32dp"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:enabled="true"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:onClick="loginPage"
+        android:text="Login"
+        android:background="@color/button"
+        android:theme="@style/PrimaryFlatButton" />
+
+    <Button
+        android:id="@+id/signup"
+        android:onClick="RegisterPage"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:enabled="true"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:theme="@style/PrimaryFlatButton"
+        android:background="@color/button"/>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_mono"
+        android:textSize="16sp"
+        android:paddingTop="8dp"
+        android:textColor="#E1F5FE"
+        android:text="@string/Request" />-->
+
+
+</LinearLayout>

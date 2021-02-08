@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="4dp"
+    card_view:cardElevation="4dp"
+    tools:context=".DearMeLetter">
+    <!--card_view:cardCornerRadius="4dp"-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+        <TextView
+            android:id="@+id/textSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:paddingLeft="4dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/DearMe"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorDark"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/textMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/textMessage"
+            android:ems="10"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_mono"
+            />
+
+        <EditText
+            android:id="@+id/textTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_mono"
+            android:hint="@string/textTo"/>
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onSendLetter"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_mono"
+            android:text="Send"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:background="@color/button"
+            android:theme="@style/PrimaryFlatButton"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
