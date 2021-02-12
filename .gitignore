@@ -11,5 +11,6 @@
 /build
 /captures
 .externalNativeBuild
+/app/src/main/java/com/example/final_check/PlayerConfig.java
 .cxx
-PlayerConfig.java
+
