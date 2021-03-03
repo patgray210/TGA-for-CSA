@@ -8,6 +8,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 
 import androidx.fragment.app.FragmentTransaction;
@@ -24,7 +25,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
+
+import java.util.Arrays;
 
 public class fragment_holder extends AppCompatActivity {
 
@@ -88,5 +94,37 @@ public class fragment_holder extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public void settingsPage(MenuItem item) {
+        setContentView(R.layout.activity_settings);
+    }
+
+    public void findQuestions(View view) {
+        Spinner category = (Spinner) findViewById(R.id.questionSelectList);
+        String toGet = String.valueOf(category.getSelectedItem());
+    ListView listView;
+    String[] listValue={};
+        listView = (ListView)findViewById(R.id.listView1);
+
+        String questionList[] = {};
+        if (toGet.equals("Anxiety")) {
+            listValue = getResources().getStringArray(R.array.Anxiety);
+        }else if (toGet.equals("Anger")) {
+            listValue = getResources().getStringArray(R.array.Anger);
+        } else if (toGet.equals("Post Traumatic Stress")) {
+            listValue = getResources().getStringArray(R.array.PostTraumaticStress);
+        }else if (toGet.equals("Depression")) {
+            listValue = getResources().getStringArray(R.array.Depression);
+        }else if (toGet.equals("Dissociation")) {
+            listValue = getResources().getStringArray(R.array.Dissociation);
+        }else if (toGet.equals("Sexual Concerns")) {
+            listValue = getResources().getStringArray(R.array.SexualConcerns);
+        }else if (toGet.equals("Wild Card")) {
+            listValue = getResources().getStringArray(R.array.WildCard);
+        }
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_2, android.R.id.text1, listValue);
+
+        listView.setAdapter(adapter);
     }
 }
