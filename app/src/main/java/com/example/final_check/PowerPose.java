@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import java.util.Random;
 
 public class PowerPose extends AppCompatActivity {
     /*Button timer = (Button) findViewById(R.id.start_timer);*/
@@ -15,15 +16,19 @@ public class PowerPose extends AppCompatActivity {
     int counter= 0;
     String playertag;
     TextView playertag_tv;
-
+    Random random = new Random();
     Button back_button;
-
-
+    private Integer [] power_pose = {
+            R.layout.activity_power_pose,
+            R.layout.activity_power_pose2,
+            R.layout.activity_power_pose3
+    };
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_power_pose);
+        int rand = random.nextInt(4);
+        setContentView(power_pose[rand] );
         playertag_tv = findViewById(R.id.player_tag_pp);
         playertag = getIntent().getExtras().getString("string_player");
         playertag_tv.setText(playertag);
