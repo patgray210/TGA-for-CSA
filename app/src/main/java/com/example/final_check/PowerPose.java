@@ -24,7 +24,9 @@ public class PowerPose extends AppCompatActivity {
             R.layout.activity_power_pose3,
             R.layout.activity_power_pose4,
             R.layout.activity_power_pose5,
-            R.layout.activity_power_pose6
+            R.layout.activity_power_pose6,
+            R.layout.activity_power_pose7,
+            R.layout.activity_power_pose8
     };
 
     @Override
