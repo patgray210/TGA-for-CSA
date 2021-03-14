@@ -21,13 +21,16 @@ public class PowerPose extends AppCompatActivity {
     private Integer [] power_pose = {
             R.layout.activity_power_pose,
             R.layout.activity_power_pose2,
-            R.layout.activity_power_pose3
+            R.layout.activity_power_pose3,
+            R.layout.activity_power_pose4,
+            R.layout.activity_power_pose5,
+            R.layout.activity_power_pose6
     };
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        int rand = random.nextInt(4);
+        int rand = random.nextInt(6);
         setContentView(power_pose[rand] );
         playertag_tv = findViewById(R.id.player_tag_pp);
         playertag = getIntent().getExtras().getString("string_player");
