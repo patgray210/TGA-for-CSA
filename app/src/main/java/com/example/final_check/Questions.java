@@ -7,9 +7,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
+import java.util.Random;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Questions extends AppCompatActivity {
 
@@ -20,17 +21,15 @@ public class Questions extends AppCompatActivity {
     List<String> list_of_cards_dissociation;
     List<String> list_of_cards_sexual_concerns;
     List<String> list_of_cards_wild_card;
-
+    Button str_skip;
     TextView questions;
-
+    Random random = new Random();
     int choosen = 0;
     public static int index = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_questions);
-
         questions = findViewById(R.id.question);
         choosen = getIntent().getExtras().getInt("stat");
         list_of_cards_anxiety = new ArrayList<>();
@@ -176,17 +175,95 @@ public class Questions extends AppCompatActivity {
             index++;
         }
         if(choosen == 3){
-            questions.setText(String.valueOf(list_of_cards_dissociation.get(index)));
+            questions.setText(String.valueOf(list_of_cards_depression.get(index)));
             index++;
         }
         if(choosen == 4){
-            questions.setText(String.valueOf(list_of_cards_sexual_concerns.get(index)));
+            questions.setText(String.valueOf(list_of_cards_dissociation.get(index)));
             index++;
         }
         if(choosen == 5){
+            questions.setText(String.valueOf(list_of_cards_sexual_concerns.get(index)));
+            index++;
+        }
+        if(choosen == 6){
             questions.setText(String.valueOf(list_of_cards_wild_card.get(index)));
             index++;
         }
 
+        str_skip = (Button)findViewById(R.id.skip);
+        str_skip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(choosen == 0){
+                    int rand = random.nextInt(12);
+                    index = rand;
+                    if(index >= 0 && index < list_of_cards_anxiety.size()){
+                        questions.setText(String.valueOf(list_of_cards_anxiety.get(index)));
+                    }
+                    else{
+                        index = 1;
+                    }
+                }
+                if(choosen == 1){
+                    int rand1 = random.nextInt(16);
+                    index = rand1;
+                    if(index >= 0 && index < list_of_cards_anger.size()){
+                        questions.setText(String.valueOf(list_of_cards_anger.get(index)));
+                    }
+                    else {
+                        index = 1;
+                    }
+                }
+
+                if(choosen == 2){
+                    int rand2 = random.nextInt(15);
+                    index = rand2;
+                    if(index >= 0 && index < list_of_cards_pts.size()){
+                        questions.setText(String.valueOf(list_of_cards_pts.get(index)));
+                    }
+                    else{
+                        index = 1;
+                    }
+                }
+
+                if(choosen == 3){
+                    index++;  int rand3 = random.nextInt(14);
+                    index = rand3;
+                    if(index >= 0 && index < list_of_cards_depression.size()){
+                        questions.setText(String.valueOf(list_of_cards_depression.get(index)));
+                    }
+                    else{
+                        index = 1;
+                    }
+                }
+
+                if(choosen == 4){
+                    index++;  int rand4 = random.nextInt(14);
+                    index = rand4;
+                    if(index >= 0 && index < list_of_cards_dissociation.size()){
+                        questions.setText(String.valueOf(list_of_cards_dissociation.get(index)));
+                    }
+                    else{
+                        index = 1;
+                    }
+                }
+                if(choosen == 5){
+                    int rand5 = random.nextInt(12);
+                    index = rand5;
+                    if(index >= 0 && index < list_of_cards_sexual_concerns.size()){
+                        questions.setText(String.valueOf(list_of_cards_sexual_concerns.get(index)));
+                    }
+                    else{
+                        index = 1;
+                    }
+                }
+
+                if(choosen == 6){
+                    questions.setText(String.valueOf(list_of_cards_wild_card.get(index)));
+                    index++;
+                }
+            }
+        });
     }
 }

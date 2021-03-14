@@ -108,22 +108,33 @@
                 android:enabled="true" />
 
             <Button
-            android:id="@+id/wild_card"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="Wild Card"
-            android:theme="@style/PrimaryFlatButton"
-            android:fontFamily="@font/roboto_mono"
-            android:enabled="true"
-            />
+                android:id="@+id/depres"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Depression"
+                android:theme="@style/PrimaryFlatButton"
+                android:fontFamily="@font/roboto_mono"
+                android:enabled="true"/>
+            <Button
+                android:id="@+id/wild_card"
+                android:layout_width="2dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Wild Card"
+                android:theme="@style/PrimaryFlatButton"
+                android:fontFamily="@font/roboto_mono"
+                android:enabled="true"
+                />
         </LinearLayout>
-<EditText
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal"
 
-    android:id="@+id/catSelected"/>
+
+        <EditText
+            android:id="@+id/catSelected"
+            android:layout_width="223dp"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_horizontal" />
         <Button
             android:id="@+id/Play"
             android:layout_marginTop="32dp"
@@ -135,6 +146,8 @@
             android:fontFamily="@font/roboto_mono"
             android:textColor="#ffffff"
             android:background="@color/button"/>
+
+
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

@@ -46,6 +46,7 @@ public class Play_fragment extends Fragment implements View.OnClickListener {
     Button anxiety;
     Button anger;
     Button pts;
+    Button depres;
     Button dissociation;
     Button concerns;
     Button mixed;
@@ -72,6 +73,7 @@ public class Play_fragment extends Fragment implements View.OnClickListener {
         anger = v.findViewById(R.id.anger);
         pts = v.findViewById(R.id.post_traumatic_stress);
         dissociation = v.findViewById(R.id.dissociation);
+        depres = v.findViewById(R.id.depres);
         concerns = v.findViewById(R.id.sexual_concerns);
         mixed = v.findViewById(R.id.wild_card);
 
@@ -79,6 +81,7 @@ public class Play_fragment extends Fragment implements View.OnClickListener {
         anxiety.setOnClickListener(this);
         anger.setOnClickListener(this);
         pts.setOnClickListener(this);
+        depres.setOnClickListener(this);
         dissociation.setOnClickListener(this);
         concerns.setOnClickListener(this);
         mixed.setOnClickListener(this);
@@ -154,13 +157,18 @@ public class Play_fragment extends Fragment implements View.OnClickListener {
             play.setEnabled(true);
 
         }
-
-        if(view.getId() == R.id.dissociation) {
+        if(view.getId() == R.id.depres) {
 
             play.setEnabled(true);
-            sCat.setText("Dissociation Selected");
-
+            sCat.setText("Depression Selected");
             getCat = 3;
+        }
+        if(view.getId() == R.id.dissociation) {
+            getCat = 4;
+
+            sCat.setText("Dissociation Selected");
+            play.setEnabled(true);
+
 
         }
 
@@ -168,18 +176,20 @@ public class Play_fragment extends Fragment implements View.OnClickListener {
 
             play.setEnabled(true);
             sCat.setText("Sexual Concerns Selected");
-            getCat = 4;
+            getCat = 5;
 
 
         }
 
-        if(view.getId() == R.id.wild_card) {
 
-            play.setEnabled(true);
+
+        if(view.getId() == R.id.wild_card) {
+            getCat = 6;
+
 
             sCat.setText("Wild Card Selected");
-            getCat = 5;
 
+            play.setEnabled(true);
         }
 
         if(view.getId() == R.id.Play){
