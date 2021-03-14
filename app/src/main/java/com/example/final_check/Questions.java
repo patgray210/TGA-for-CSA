@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -186,7 +187,6 @@ public class Questions extends AppCompatActivity {
             questions.setText(String.valueOf(list_of_cards_wild_card.get(index)));
             index++;
         }
-
 
     }
 }
