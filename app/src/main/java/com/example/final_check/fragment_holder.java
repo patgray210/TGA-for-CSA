@@ -26,7 +26,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.widget.TextView;
 
-public class fragment_holder extends AppCompatActivity {
+class fragment_holder extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     DatabaseHelper db;
@@ -57,7 +57,7 @@ public class fragment_holder extends AppCompatActivity {
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_play, R.id.nav_add_patients, R.id.nav_existing_patients,
-                R.id.nav_write_letter, R.id.nav_mindfulness)
+                R.id.nav_write_letter, R.id.nav_mindfulness, R.id.game_instructions)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);

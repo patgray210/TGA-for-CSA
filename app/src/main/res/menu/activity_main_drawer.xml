@@ -26,6 +26,11 @@
             android:icon="@drawable/ic_menu_share"
             android:title="@string/Mindfulness" />
 
+        <item
+            android:id="@+id/Gameinstructions"
+            android:icon="@drawable/sqaure"
+            android:title="@string/game_instructions_button" />
+
 
     </group>
 
