@@ -26,7 +26,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.widget.TextView;
 
-class fragment_holder extends AppCompatActivity {
+public class fragment_holder extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     DatabaseHelper db;
