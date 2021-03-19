@@ -42,11 +42,144 @@
         <item>Anxiety</item>
         <item>Anger</item>
         <item>Post Traumatic Stress</item>
+        <item>Depression</item>
         <item>Dissociation</item>
         <item>Sexual Concerns</item>
-        <item>Wild Card</item>
+        <item>Wild Card</item> 
     </string-array>
 
+    <string-array name="Anxiety">
+        <item>Generalized anxiety, hyperarousal, and worry; specific fears; episodes of free-floating anxiety; and a sense of impending danger</item>
+        <item>1) How do you know when you feel worried?</item>
+        <item>2) Where do you feel worry in your body?</item>
+        <item>3) How do you know when you feel scared?</item>
+        <item>4) Where do you feel fear in your body?</item>
+        <item>5) What is your greatest fear?</item>
+        <item>6) What are the things that are scary to you?</item>
+        <item>7) What are the things you worry about?</item>
+        <item>8) Who helps you when you are scared?</item>
+        <item>9) What helps you when you are scared?</item>
+        <item>10) What would life be like if you did not worry anymore?</item>
+        <item>11) Is the worry helpful or harmful?</item>
+        <item>12) What is the difference between worry and fear?</item>
+        <item>13) How often do you feel worry?</item>
+        <item>14) How often do you feel fearful?</item>
+        <item>15) Do you often worry that something bad will happen soon?</item>
+    </string-array>
+
+    <string-array name="Anger">
+        <item>1) How do you know that you are angry?</item>
+        <item>2) What actions make you angry?</item>
+        <item>3) What thoughts make you angry?</item>
+        <item>4) What happens in your body when you get angry?</item>
+        <item>5) Who do you trust to talk to when you are angry?</item>
+        <item>6) What helps you the most when you feel very angry?</item>
+        <item>7) What helps the most when you are feeling somewhat angry?</item>
+        <item>8) Does your anger ever make you feel like hurting yourself?</item>
+        <item>9) Does your anger ever make you feel like hurting someone else?</item>
+        <item>10) Who do you dislike most and why?</item>
+        <item>11) When was the last time you raised your voice when you were angry?</item>
+        <item>12) When was the last time you isolated yourself or avoided others when feeling angry?</item>
+        <item>13) How would others describe you when you are angry?</item>
+        <item>14) Does anyone in your life pick fights with you? Who?</item>
+        <item>15) Do you pick fights with anyone in your life? Who?</item>
+        <item>16) How long does it take to feel calm after getting very angry?</item>
+        <item>17) Do you believe you are a mean person?</item>
+        <item>18) Do you believe others think you are a mean person?</item>
+    </string-array>
+
+    <string-array name="Depression">
+        <item>1) What makes you cry?</item>
+        <item>2) When was the last time you cried?</item>
+        <item>3) Do you like yourself?</item>
+        <item>4) Do you believe others like you?</item>
+        <item>5) Do you believe others enjoy spending time with you?</item>
+        <item>6) Have you ever purposefully hurt yourself? When? How?</item>
+        <item>7) What helps you when you are feeling sad?</item>
+        <item>8) Who do you trust to talk to when you are feeling sad?</item>
+        <item>9) What do you like about yourself?</item>
+        <item>10) What makes you feel guilty?</item>
+        <item>11) What makes you feel shameful?</item>
+        <item>12) Have you ever blamed yourself for bad things that have happened to you?</item>
+        <item>13) When do you feel lonely?</item>
+        <item>14) What thoughts contribute to feelings of sadness?</item>
+        <item>15) What actions contribute to feelings of sadness?</item>
+        <item>16) When you feel sad, how long does the sadness usually last?</item>
+        <item>17) Do you know anyone who has purposefully harmed themselves?</item>
+        <item>18) Do you know anyone who has died by suicide?</item>
+        <item>19) What are your beliefs regarding self-harm?</item>
+        <item>20) What are your beliefs regarding suicide?</item>
+    </string-array>
+
+    <string-array name="PostTraumaticStress">
+        <item>1) Are there people you avoid seeing?</item>
+        <item>2) Are there things you avoid doing?</item>
+        <item>3) What happens when you see someone who have been trying to avoid?</item>
+        <item>4) What happens when you are asked to do something you have been trying to avoid?</item>
+        <item>5) Do you ever have thoughts that are hard to get out of your head? What are they?</item>
+        <item>6) When was the last time you had a bad dream?</item>
+        <item>7) Tell me about the last bad dream you had.</item>
+        <item>8) What do you do when you have difficult thoughts?</item>
+        <item>9) What do you do when you have bad dreams?</item>
+        <item>10) Do you ever try to avoid feeling sad? How?</item>
+        <item>11) Do you every try to avoid feeling angry? How?</item>
+        <item>12) Do you ever try to avoid feeling scared? How?</item>
+        <item>13) What is your worst memory? Why?</item>
+        <item>14) When do you notice difficult feelings or thoughts?</item>
+        <item>15) Are memories of the abuse foggy or clear?</item>
+    </string-array>
+    <string-array name="Dissociation">
+        <item>1) Do you daydream?</item>
+        <item>2) What happens when you daydream?</item>
+        <item>3) Do you ever feel as if you have lost periods of time?</item>
+        <item>4) Would you say you are forgetful?</item>
+        <item>5) What types of things do you forget?</item>
+        <item>6) When do you notice you are most forgetful?</item>
+        <item>7) Tell me a story you have created while daydreaming?</item>
+        <item>8) Have you ever felt like you were outside of or separate from yourself?</item>
+        <item>9) Have you ever desired or pretended to be someone else? Who?</item>
+        <item>10) Have you ever pretended to be somewhere else? Where?</item>
+        <item>11) Is it difficult to talk about emotions?</item>
+        <item>12) Is it difficult to talk about the sexual abuse that occurred?</item>
+        <item>13) Is it difficult to feel emotions?</item>
+        <item>14) Do some emotions feel safer than others to access?</item>
+        <item>15) Do you ever feel numb?</item>
+    </string-array>
+    <string-array name="SexualConcerns">
+        <item>1) Are there places or experiences that trigger memories your sexual abuse? What are they?</item>
+        <item>2) Are you fearful of sexual abuse occurring again?</item>
+        <item>3) Do you ever feel to blame for the sexual abuse? Why?</item>
+        <item>4) Do you still have to see your abuser?</item>
+        <item>5) Do you think about sex? If so, what are the thoughts?</item>
+        <item>6) Do you ever experience sexual feelings in your body?</item>
+        <item>7) Do you ever feel like you have sexual impulses you cannot control?</item>
+        <item>8) Do you ever feel like you have thoughts regarding sex that you cannot get out of your head?</item>
+        <item>9) How do you feel when you hear others talking about sex?</item>
+        <item>10) Are there safe areas of your body that others may touch?</item>
+        <item>11) Are there boundaries you want to implement that may help you feel safer?</item>
+        <item>12) Do you have particular fears regarding men or women?</item>
+        <item>13) Do you believe that others intend to hurt you?</item>
+    </string-array>
+    <string-array name="WildCard">
+        <item>1) What brings you joy?</item>
+        <item>2) What is your favorite memory? Why?</item>
+        <item>3) Name 3 things that you like about yourself.</item>
+        <item>4) Name 3 things that you believe you do well.</item>
+        <item>5) What are qualities of someone who is trustworthy?</item>
+        <item>6) What are qualities of a good friend?</item>
+        <item>7) Describe a place that brings feelings of safety or comfort (can be imagined or real)? What makes that place special?</item>
+        <item>8) Breathe.</item>
+        <item>9) Who or what brings you comfort?</item>
+        <item>10) What are some favorite things to do for fun?</item>
+        <item>11) Who do you like to spend time with the most?</item>
+        <item>12) When do you need to be alone?</item>
+        <item>13) When do you most want to be with others?</item>
+        <item>14) Tell me about the last thing you created.</item>
+        <item>15) Tell me about your favorite song.</item>
+        <item>16) What would you say to a friend that experienced sexual abuse?</item>
+        <item>17) Create a mantra or saying that may be helpful when you are experiencing difficult thoughts or feelings.</item>
+        <item>18) If you could have any superpower what would it be?</item>
+    </string-array>
 
     <string-array name="names">
         <item>Select a Category</item>

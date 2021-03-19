@@ -38,8 +38,8 @@ public class Add_patients_fragment extends Fragment implements View.OnClickListe
         save = root.findViewById(R.id.save);
         patient_name = root.findViewById(R.id.patient_name);
         category = root.findViewById(R.id.category);
-        age = root.findViewById(R.id.age);
-        gender = root.findViewById(R.id.gender);
+        //age = root.findViewById(R.id.age);
+        //gender = root.findViewById(R.id.gender);
         save.setOnClickListener(this);
 
         return root;

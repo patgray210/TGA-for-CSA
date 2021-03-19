@@ -47,10 +47,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         final patient_data data = mData.get(position);
 
         holder.tv_name.setText(data.getName());
-        holder.tv_id.setText(data.getId());
+        //holder.tv_id.setText(data.getId());
         holder.tv_mental_health.setText(data.getMental_health());
-        holder.tv_sex.setText(data.getSex());
-        holder.tv_age.setText(data.getAge());
+        //holder.tv_sex.setText(data.getSex());
+        //holder.tv_age.setText(data.getAge());
 
     }
 
@@ -65,9 +65,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         private TextView tv_name;
         private TextView tv_mental_health;
-        private TextView tv_id;
-        private TextView tv_sex;
-        private TextView tv_age;
+       // private TextView tv_id;
+        //private TextView tv_sex;
+        //private TextView tv_age;
 
         private CardView cardView;
 
@@ -76,9 +76,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
             cardView = (CardView) v.findViewById(R.id.patient_card_view);
             tv_name = (TextView) v.findViewById(R.id.patient_name);
-            tv_age = (TextView) v.findViewById(R.id.patient_age);
-            tv_id = (TextView) v.findViewById(R.id.patient_id);
-            tv_sex = (TextView) v.findViewById(R.id.patient_sex);
+            //tv_age = (TextView) v.findViewById(R.id.patient_age);
+            //tv_id = (TextView) v.findViewById(R.id.patient_id);
+            //tv_sex = (TextView) v.findViewById(R.id.patient_sex);
             tv_mental_health = (TextView) v.findViewById(R.id.patient_mental_health);
 
 

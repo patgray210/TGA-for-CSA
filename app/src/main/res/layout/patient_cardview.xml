@@ -54,6 +54,7 @@
             android:orientation="horizontal"
             android:paddingTop="2dp"
             >
+            <!--
             <TextView
                 android:id="@+id/patient_age"
                 android:layout_width="wrap_content"
@@ -66,6 +67,7 @@
                 android:layout_height="wrap_content"
                 android:text=" Years old"
                 android:textSize="14sp" />
+                -->
 
 
         </LinearLayout>
@@ -90,7 +92,7 @@
                 android:textSize="14sp"/>
 
         </LinearLayout>
-
+        <!--
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -109,7 +111,9 @@
                 android:layout_height="wrap_content"
                 android:text="Male"
                 android:textSize="14sp"/>
+
         </LinearLayout>
+         -->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -117,6 +121,7 @@
             android:orientation="horizontal"
             android:paddingTop="2dp"
             >
+            <!--
              <TextView
                  android:id="@+id/patient_id_tag"
                  android:layout_width="wrap_content"
@@ -130,6 +135,7 @@
                 android:layout_height="wrap_content"
                 android:text="12345"
                 android:textSize="14sp"/>
+                -->
         </LinearLayout>
 
 

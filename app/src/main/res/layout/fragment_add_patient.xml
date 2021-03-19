@@ -44,10 +44,10 @@
             android:layout_marginTop="8dp"
             android:fontFamily="@font/roboto"
             android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
-            android:hint="Patient Name"
+            android:hint="Patient Id"
             android:selectAllOnFocus="true" />
 
-        <EditText
+        <!--<EditText
             android:id="@+id/age"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -60,9 +60,10 @@
             android:imeActionLabel="@string/action_sign_in_short"
             android:imeOptions="actionDone"
             android:selectAllOnFocus="true" />
+            -->
 
 
-        <EditText
+       <!-- <EditText
             android:id="@+id/gender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,6 +76,7 @@
             android:imeActionLabel="@string/action_sign_in_short"
             android:imeOptions="actionDone"
             android:selectAllOnFocus="true" />
+            -->
 
 
         <Spinner
