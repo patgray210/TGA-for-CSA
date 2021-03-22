@@ -2,14 +2,18 @@ package com.example.final_check;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import java.util.Random;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 public class PowerPose extends AppCompatActivity {
     /*Button timer = (Button) findViewById(R.id.start_timer);*/
@@ -20,6 +24,7 @@ public class PowerPose extends AppCompatActivity {
     Random random = new Random();
     Button back_button;
     private ImageView rView;
+    FrameLayout powerposelay;
     private Integer [] images = {
         R.drawable.yoga1, R.drawable.yoga2,
             R.drawable.yoga3,  R.drawable.yoga4,
