@@ -6,15 +6,14 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.final_check.BreathingActivity;
-import com.example.final_check.BreathingActivity;
+import com.example.final_check.PowerPose;
 import com.example.final_check.R;
 import com.example.final_check.Youtube;
 
@@ -22,6 +21,7 @@ import com.example.final_check.Youtube;
 public class Mindfulness extends Fragment implements View.OnClickListener {
     ImageButton play;
     ImageButton breath;
+    ImageButton yoga;
 
     @Nullable
     @Override
@@ -32,8 +32,10 @@ public class Mindfulness extends Fragment implements View.OnClickListener {
         Log.d("hi", "check");
         play = root.findViewById(R.id.play);
         breath = root.findViewById(R.id.breathing_button);
+        yoga = root.findViewById(R.id.yoga);
         play.setOnClickListener(this);
         breath.setOnClickListener(this);
+        yoga.setOnClickListener(this);
         return root;
 
     }
@@ -51,6 +53,11 @@ public class Mindfulness extends Fragment implements View.OnClickListener {
             Intent i = new Intent(this.getContext(), BreathingActivity.class);
             startActivity(i);
 
+        }
+
+        if(view.getId() == R.id.yoga){
+            Intent i = new Intent(this.getContext(), PowerPose.class);
+            startActivity(i);
         }
     }
 }

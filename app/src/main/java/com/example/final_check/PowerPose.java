@@ -35,13 +35,13 @@ public class PowerPose extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        int rand = random.nextInt(8);
         setContentView(R.layout.activity_power_pose);
+        int rand = random.nextInt(8);
         rView = (ImageView)findViewById(R.id.rView);
         rView.setImageResource(images[rand]);
-        playertag_tv = findViewById(R.id.player_tag_pp);
-        playertag = getIntent().getExtras().getString("string_player");
-        playertag_tv.setText(playertag);
+//        playertag_tv = findViewById(R.id.player_tag_pp);
+//        playertag = getIntent().getExtras().getString("string_player");
+//        playertag_tv.setText(playertag);
         back_button = (Button)findViewById(R.id.back_button);
         back_button.setOnClickListener(new View.OnClickListener() {
             @Override
