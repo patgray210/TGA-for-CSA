@@ -28,7 +28,8 @@
             android:text="Breathing Exercise "
             android:textAlignment="center"
             android:textColor="@color/colorDark"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal" />
 
         <ImageButton
             android:id="@+id/breathing_button"
@@ -51,18 +52,43 @@
             android:text="Play to Relax your mind"
             android:textAlignment="center"
             android:textColor="@color/colorDark"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal" />
 
         <ImageButton
             android:id="@+id/play"
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
             android:fontFamily="@font/roboto_mono"
             android:scaleType="centerCrop"
             android:src="@drawable/play"
             android:elevation="4dp"
             android:text="Play Video"
+            android:background="@color/red"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_mono"
+            android:padding="16dp"
+            android:text="Start a Yoga Session"
+            android:textAlignment="center"
+            android:textColor="@color/colorDark"
+            android:textSize="20sp"
+            android:gravity="center_horizontal" />
+
+        <ImageButton
+            android:id="@+id/yoga"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_mono"
+            android:scaleType="centerCrop"
+            android:src="@drawable/yoga_but"
+            android:elevation="4dp"
+            android:text="Start Yoga"
             android:background="@color/red"/>
     </LinearLayout>
 </androidx.cardview.widget.CardView>
