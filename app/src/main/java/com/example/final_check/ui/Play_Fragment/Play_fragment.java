@@ -50,6 +50,7 @@ public class Play_fragment extends Fragment implements View.OnClickListener {
     Button dissociation;
     Button concerns;
     Button mixed;
+    Button all;
 
     String str1;
 
@@ -76,6 +77,7 @@ public class Play_fragment extends Fragment implements View.OnClickListener {
         depres = v.findViewById(R.id.depres);
         concerns = v.findViewById(R.id.sexual_concerns);
         mixed = v.findViewById(R.id.wild_card);
+        all = v.findViewById(R.id.ALL);
 
         play.setOnClickListener(this);
         anxiety.setOnClickListener(this);
@@ -85,6 +87,7 @@ public class Play_fragment extends Fragment implements View.OnClickListener {
         dissociation.setOnClickListener(this);
         concerns.setOnClickListener(this);
         mixed.setOnClickListener(this);
+        all.setOnClickListener(this);
         play.setEnabled(false);
         return v;
     }
@@ -191,7 +194,14 @@ public class Play_fragment extends Fragment implements View.OnClickListener {
 
             play.setEnabled(true);
         }
+        if(view.getId() == R.id.ALL) {
 
+            play.setEnabled(true);
+            sCat.setText("All Questions Selected");
+            getCat = 7;
+
+
+        }
         if(view.getId() == R.id.Play){
             i.putExtra("state",getCat);
 

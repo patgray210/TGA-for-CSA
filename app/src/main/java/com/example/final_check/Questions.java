@@ -21,6 +21,7 @@ public class Questions extends AppCompatActivity {
     List<String> list_of_cards_dissociation;
     List<String> list_of_cards_sexual_concerns;
     List<String> list_of_cards_wild_card;
+    List<String> list_of_cards_all;
     Button str_skip;
     TextView questions;
     Random random = new Random();
@@ -160,6 +161,119 @@ public class Questions extends AppCompatActivity {
         list_of_cards_wild_card.add(("Create a mantra or saying that may be helpful when you are experiencing difficult thoughts or feelings."));
         list_of_cards_wild_card.add(("If you could have any superpower what would it be?"));
 
+        list_of_cards_all = new ArrayList<>();
+        list_of_cards_all.add("How do you know when you feel worried?");
+        list_of_cards_all.add(("Where do you feel worry in your body?"));
+        list_of_cards_all.add(("How do you know when you feel scared?"));
+        list_of_cards_all.add(("Where do you feel fear in your body?"));
+        list_of_cards_all.add(("What are the things that are scary to you?"));
+        list_of_cards_all.add(("What are the things you worry about?"));
+        list_of_cards_all.add(("Who helps you when you are scared?"));
+        list_of_cards_all.add(("What would life be like if you did not worry anymore?"));
+        list_of_cards_all.add(("Is the worry helpful or harmful?"));
+        list_of_cards_all.add(("What is the difference between worry and fear?"));
+        list_of_cards_all.add(("How often do you feel worry?"));
+        list_of_cards_all.add(("How often do you feel fearful?"));
+        list_of_cards_all.add(("Do you often worry that something bad will happen soon?"));
+        list_of_cards_all.add(("How do you know that you are angry?"));
+        list_of_cards_all.add(("What actions make you angry?"));
+        list_of_cards_all.add(("What happens in your body when you get angry?"));
+        list_of_cards_all.add(("Who do you trust to talk to when you are angry?"));
+        list_of_cards_all.add(("What helps you the most when you feel very angry?"));
+        list_of_cards_all.add(("What helps the most when you are feeling somewhat angry?"));
+        list_of_cards_all.add(("Does your anger ever make you feel like hurting yourself"));
+        list_of_cards_all.add(("Does your anger ever make you feel like hurting someone else?"));
+        list_of_cards_all.add(("Who do you dislike most and why?"));
+        list_of_cards_all.add(("When was the last time you raised your voice when you were angry?"));
+        list_of_cards_all.add(("When was the last time you isolated yourself or avoided others when feeling angry?"));
+        list_of_cards_all.add(("How would others describe you when you are angry?"));
+        list_of_cards_all.add(("Does anyone in your life pick fights with you? Who?"));
+        list_of_cards_all.add(("Do you pick fights with anyone in your life? Who?"));
+        list_of_cards_all.add(("How long does it take to feel calm after getting very angry?"));
+        list_of_cards_all.add(("Do you believe you are a mean person?"));
+        list_of_cards_all.add(("Do you believe others think you are a mean person?"));
+        list_of_cards_all.add(("What makes you cry?"));
+        list_of_cards_all.add(("When was the last time you cried?"));
+        list_of_cards_all.add(("Do you like yourself?"));
+        list_of_cards_all.add(("Do you believe others like you?"));
+        list_of_cards_all.add(("Do you believe others enjoy spending time with you?"));
+        list_of_cards_all.add(("Have you ever purposefully hurt yourself? When? How?"));
+        list_of_cards_all.add(("What helps you when you are feeling sad?"));
+        list_of_cards_all.add(("Who do you trust to talk to when you are feeling sad?"));
+        list_of_cards_all.add(("What do you like about yourself?"));
+        list_of_cards_all.add(("What makes you feel guilty?"));
+        list_of_cards_all.add(("What makes you feel shameful?"));
+        list_of_cards_all.add(("Have you ever blamed yourself for bad things that have happened to you?"));
+        list_of_cards_all.add(("When do you feel lonely?"));
+        list_of_cards_all.add(("What thoughts contribute to feelings of sadness?"));
+        list_of_cards_all.add(("What actions contribute to feelings of sadness?"));
+        list_of_cards_all.add(("When you feel sad, how long does the sadness usually last?"));
+        list_of_cards_all.add(("Do you know anyone who has purposefully harmed themselves?"));
+        list_of_cards_all.add(("Do you know anyone who has died by suicide?"));
+        list_of_cards_all.add(("What are your beliefs regarding self-harm?"));
+        list_of_cards_all.add(("What are your beliefs regarding suicide"));
+        list_of_cards_all.add(("Are there people you avoid seeing?"));
+        list_of_cards_all.add(("Are there things you avoid doing?"));
+        list_of_cards_all.add(("What happens when you see someone who have been trying to avoid?"));
+        list_of_cards_all.add(("What happens when you are asked to do something you have been trying to avoid?"));
+        list_of_cards_all.add(("Do you ever have thoughts that are hard to get out of your head? What are they?"));
+        list_of_cards_all.add(("When was the last time you had a bad dream?"));
+        list_of_cards_all.add(("Tell me about the last bad dream you had."));
+        list_of_cards_all.add(("What do you do when you have difficult thoughts?"));
+        list_of_cards_all.add(("What do you do when you have bad dreams?"));
+        list_of_cards_all.add(("Do you ever try to avoid feeling sad? How?"));
+        list_of_cards_all.add(("Do you every try to avoid feeling angry? How?"));
+        list_of_cards_all.add(("Do you ever try to avoid feeling scared? How?"));
+        list_of_cards_all.add(("What is your worst memory? Why?"));
+        list_of_cards_all.add(("When do you notice difficult feelings or thoughts?"));
+        list_of_cards_all.add(("Are memories of the abuse foggy or clear?"));
+        list_of_cards_all.add(("Do you daydream?"));
+        list_of_cards_all.add(("What happens when you daydream?"));
+        list_of_cards_all.add(("Do you ever feel as if you have lost periods of time?"));
+        list_of_cards_all.add(("Would you say you are forgetful?"));
+        list_of_cards_all.add(("What types of things do you forget?"));
+        list_of_cards_all.add(("When do you notice you are most forgetful?"));
+        list_of_cards_all.add(("Tell me a story you have created while daydreaming?"));
+        list_of_cards_all.add(("Have you ever felt like you were outside of or separate from yourself?"));
+        list_of_cards_all.add(("Have you ever desired or pretended to be someone else? Who?"));
+        list_of_cards_all.add(("Have you ever pretended to be somewhere else? Where?"));
+        list_of_cards_all.add(("Is it difficult to talk about emotions?"));
+        list_of_cards_all.add(("Is it difficult to talk about the sexual abuse that occurred?"));
+        list_of_cards_all.add(("Is it difficult to feel emotions?"));
+        list_of_cards_all.add(("Do some emotions feel safer than others to access?"));
+        list_of_cards_all.add(("Do you ever feel numb?"));
+        list_of_cards_all.add(("Are there places or experiences that trigger memories your sexual abuse? What are they?"));
+        list_of_cards_all.add(("Are you fearful of sexual abuse occurring again?"));
+        list_of_cards_all.add(("Do you ever feel to blame for the sexual abuse? Why?"));
+        list_of_cards_all.add(("Do you still have to see your abuser?"));
+        list_of_cards_all.add(("Do you think about sex? If so, what are the thoughts?"));
+        list_of_cards_all.add(("Do you ever experience sexual feelings in your body?"));
+        list_of_cards_all.add(("Do you ever feel like you have sexual impulses you cannot control?"));
+        list_of_cards_all.add(("Do you ever feel like you have thoughts regarding sex that you cannot get out of your head?"));
+        list_of_cards_all.add(("How do you feel when you hear others talking about sex?"));
+        list_of_cards_all.add(("Are there safe areas of your body that others may touch?"));
+        list_of_cards_all.add(("Are there boundaries you want to implement that may help you feel safer?"));
+        list_of_cards_all.add(("Do you have particular fears regarding men or women?"));
+        list_of_cards_all.add(("Do you believe that others intend to hurt you?"));
+        list_of_cards_all.add(("What brings you joy?"));
+        list_of_cards_all.add(("What is your favorite memory? Why?"));
+        list_of_cards_all.add(("Name 3 things that you like about yourself"));
+        list_of_cards_all.add(("Name 3 things that you believe you do well."));
+        list_of_cards_all.add(("What are qualities of someone who is trustworthy?"));
+        list_of_cards_all.add(("What are qualities of a good friend?"));
+        list_of_cards_all.add(("Describe a place that brings feelings of safety or comfort (can be imagined or real)? What makes that place special?"));
+        list_of_cards_all.add(("Breathe."));
+        list_of_cards_all.add(("Who or what brings you comfort?"));
+        list_of_cards_all.add(("What are some favorite things to do for fun?"));
+        list_of_cards_all.add(("Who do you like to spend time with the most?"));
+        list_of_cards_all.add(("When do you need to be alone?"));
+        list_of_cards_all.add(("When do you most want to be with others?"));
+        list_of_cards_all.add(("Tell me about the last thing you created."));
+        list_of_cards_all.add(("Tell me about your favorite song."));
+        list_of_cards_all.add(("What would you say to a friend that experienced sexual abuse?"));
+        list_of_cards_all.add(("Create a mantra or saying that may be helpful when you are experiencing difficult thoughts or feelings."));
+        list_of_cards_all.add(("If you could have any superpower what would it be?"));
+
 
         if(choosen == 0){
             questions.setText(String.valueOf(list_of_cards_anxiety.get(index)));
@@ -188,6 +302,10 @@ public class Questions extends AppCompatActivity {
         }
         if(choosen == 6){
             questions.setText(String.valueOf(list_of_cards_wild_card.get(index)));
+            index++;
+        }
+        if(choosen == 7){
+            questions.setText(String.valueOf(list_of_cards_all.get(index)));
             index++;
         }
 
@@ -262,6 +380,16 @@ public class Questions extends AppCompatActivity {
                 if(choosen == 6){
                     questions.setText(String.valueOf(list_of_cards_wild_card.get(index)));
                     index++;
+                }
+                if(choosen == 7){
+                    int rand5 = random.nextInt(110);
+                    index = rand5;
+                    if(index >= 0 && index < list_of_cards_all.size()){
+                        questions.setText(String.valueOf(list_of_cards_all.get(index)));
+                    }
+                    else{
+                        index = 1;
+                    }
                 }
             }
         });
