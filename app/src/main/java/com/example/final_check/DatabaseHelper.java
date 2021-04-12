@@ -50,14 +50,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return res;
     }
 
-    public void addPatient(String name, String category, String gender, String age, String uname){
+    public void addPatient(String name, String category, String uname){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put("name", name);
         contentValues.put("category",category);
-        contentValues.put("gender",gender);
-        contentValues.put("age",age);
         contentValues.put("username",uname);
+        contentValues.put("gender","null");
+        contentValues.put("age","null");
         Log.d("ADD Patient ","ADD Patient 1");
 
         db.insert("patientData",null,contentValues);
@@ -108,10 +108,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     }
 
-    public boolean checkPatient(String email, String patientName, String category, String age, String gender)
+    public boolean checkPatient(String email, String patientName, String category)
     {
         SQLiteDatabase db = getReadableDatabase();
-        Cursor cursor = db.rawQuery(" SELECT * FROM patientData WHERE username = '"+email+"' And name = '"+patientName+"' And category = '"+category+"' And age = '"+age+"' And gender = '"+gender+"'",null);
+        Cursor cursor = db.rawQuery(" SELECT * FROM patientData WHERE username = '"+email+"' And name = '"+patientName+"' And category = '"+category+"'",null);
         Log.d("Here Patient Exists 1 ","CHECK Existing Patient 1");
 
         int count = cursor.getCount();
@@ -137,8 +137,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 allData.setId(cursor.getString(0));
                 allData.setName(cursor.getString(2));
                 allData.setMental_health(cursor.getString(3));
-                allData.setSex(cursor.getString(4));
-                allData.setAge(cursor.getString(5));
+
                 all_patient_data.add(allData);
             }while (cursor.moveToNext());
         }

@@ -58,31 +58,23 @@ public class Add_patients_fragment extends Fragment implements View.OnClickListe
 
         String name = patient_name.getText().toString().trim();
         /*String cat = category.getText().toString().trim();*/
-        String patAge = age.getText().toString().trim();
-        String gndr = gender.getText().toString().trim();
-        boolean patientThere = db.checkPatient(loggedUser,name, cat ,patAge,gndr);
+        boolean patientThere = db.checkPatient(loggedUser,name, cat );
         if(patientThere == false){
-            if(TextUtils.isEmpty(name) || TextUtils.isEmpty(patAge) || TextUtils.isEmpty(gndr))
+            if(TextUtils.isEmpty(name) )
             {
                 if(TextUtils.isEmpty(name))
                     patient_name.setError("The item cannot be empty");
                 /*if(TextUtils.isEmpty(cat))
                     category.setError("The item cannot be empty");*/
-                if(TextUtils.isEmpty(patAge))
-                    age.setError("The item cannot be empty");
-                if(TextUtils.isEmpty(gndr))
-                    gender.setError("The item cannot be empty");
 
                 Toast.makeText(getActivity(), "EMPTY FIELD DETECTED!!", Toast.LENGTH_SHORT).show();
                 Log.d("CHECK EMPTY ", "IT IS EMPTY IF STATEMENT");
             }
             else
             {
-                db.addPatient(name, cat, gndr, patAge, loggedUser);
+                db.addPatient(name, cat, loggedUser);
                 patient_name.setText("");
-                /*category.setText("");*/
-                age.setText("");
-                gender.setText("");
+                //category.setText("");
                 Toast.makeText(getActivity(), "Patient Added", Toast.LENGTH_SHORT).show();
 
             }
