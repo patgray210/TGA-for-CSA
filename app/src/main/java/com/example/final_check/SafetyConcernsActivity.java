@@ -6,7 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-class SafetyConcernsActivity extends AppCompatActivity {
+public class SafetyConcernsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

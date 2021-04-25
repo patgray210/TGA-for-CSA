@@ -27,7 +27,7 @@
             android:title="@string/Mindfulness" />
 
         <item
-            android:id="@+id/Gameinstructions"
+            android:id="@+id/GameInstructions"
             android:icon="@drawable/sqaure"
             android:title="@string/game_instructions_button" />
 
