@@ -1,31 +1,19 @@
 package com.example.final_check.ui.GameInstructions;
 
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Spinner;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.final_check.DatabaseHelper;
-import com.example.final_check.LoginActivity;
 import com.example.final_check.R;
-import com.example.final_check.fragment_holder;
 
 
 import com.example.final_check.ClinicianPartActivity;
-import com.example.final_check.R;
 import com.example.final_check.SafetyConcernsActivity;
 import com.example.final_check.TostartActivity;
 

@@ -14,22 +14,19 @@ public class InstructionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_instruction);
     }
 
-    public void onClick(View view) {
+    public void SafetyConcernsPage(View view) {
+        Intent intent = new Intent(this, SafetyConcernsActivity.class);
+        startActivity(intent);
+    }
 
-        if (view.getId() == R.id.SafetyConcerns) {
-            Intent intent = new Intent(this, SafetyConcernsActivity.class);
-            startActivity(intent);
-        }
+    public void TostartPage(View view) {
+        Intent intent = new Intent(this, TostartActivity.class);
+        startActivity(intent);
+    }
 
-        if (view.getId() == R.id.Tostart) {
-            Intent intent = new Intent(this, TostartActivity.class);
-            startActivity(intent);
-        }
-
-        if (view.getId() == R.id.Clinicianpart) {
-            Intent intent = new Intent(this, ClinicianPartActivity.class);
-            startActivity(intent);
-        }
+    public void ClinicianpartPage(View view) {
+        Intent intent = new Intent(this, ClinicianPartActivity.class);
+        startActivity(intent);
     }
 
 }

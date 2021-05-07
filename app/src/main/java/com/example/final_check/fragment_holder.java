@@ -57,7 +57,7 @@ public class fragment_holder extends AppCompatActivity {
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_play, R.id.nav_add_patients, R.id.nav_existing_patients,
-                R.id.nav_write_letter, R.id.nav_mindfulness, R.id.GameInstructions)
+                R.id.nav_write_letter, R.id.nav_mindfulness, R.id.GameInstructions, R.id.Tostart, R.id.SafetyConcerns, R.id.Clinicianpart)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);

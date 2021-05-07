@@ -2,9 +2,15 @@ package com.example.final_check;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.final_check.ui.GameInstructions.fragment_InstructionActivity;
 
 public class SafetyConcernsActivity extends AppCompatActivity {
 
@@ -14,7 +20,7 @@ public class SafetyConcernsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_safetyconcerns);
     }
 
-    public void GameinstructionsPage(View view) {
+    public void GameInstructionsPage(View view) {
         Intent intent = new Intent(this, InstructionActivity.class);
         startActivity(intent);
     }

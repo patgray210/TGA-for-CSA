@@ -88,7 +88,7 @@
             android:layout_margin="6dp"
             android:background="@color/button"
             android:fontFamily="@font/roboto_slab_bold"
-            android:onClick="GameinstructionsPage"
+            android:onClick="GameInstructionsPage"
             android:text="@string/game_instructions_button"
             android:textColor="#ffffff"
             android:textSize="18sp"
