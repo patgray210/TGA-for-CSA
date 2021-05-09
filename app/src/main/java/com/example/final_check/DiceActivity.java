@@ -293,7 +293,7 @@ public class DiceActivity extends AppCompatActivity {
                     rec14.setImageResource(0);
                     rec15.setImageResource(0);
                     rec16.setImageResource(0);
-                    intent = new Intent(DiceActivity.this, Sensing.class);
+                    intent = new Intent(DiceActivity.this, PowerPose.class);
                     startActivity(intent);
                 }
 
@@ -314,7 +314,7 @@ public class DiceActivity extends AppCompatActivity {
                     rec14.setImageResource(0);
                     rec15.setImageResource(0);
                     rec16.setImageResource(0);
-                    intent = new Intent(DiceActivity.this, Sensing.class);
+                    intent = new Intent(DiceActivity.this, BreathingActivity.class);
                     startActivity(intent);
                 }
 

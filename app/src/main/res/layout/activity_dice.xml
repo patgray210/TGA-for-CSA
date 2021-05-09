@@ -196,7 +196,7 @@
                 android:src="@drawable/ic_location_on_black_24dp"
                 android:layout_marginRight="3dp"
                 android:layout_gravity="center_horizontal"
-                android:background="@color/green"
+                android:background="@color/yellow"
                 android:visibility="visible"/>
             <ImageView
             android:layout_width="wrap_content"
@@ -228,7 +228,7 @@
                 android:layout_marginRight="3dp"
                 android:layout_gravity="center_horizontal"
 
-                android:background="@color/green"
+                android:background="@color/red"
                 android:visibility="visible"/>
             <ImageView
                 android:layout_width="wrap_content"
