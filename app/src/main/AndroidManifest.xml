@@ -16,6 +16,7 @@
         <activity android:name=".result"></activity>
         <activity android:name=".PowerPose" />
         <activity android:name=".Sensing" />
+        <activity android:name="Ground"/>
         <activity android:name=".DiceActivity" />
         <activity android:name=".BreathingActivity" />
         <activity android:name=".Youtube" />

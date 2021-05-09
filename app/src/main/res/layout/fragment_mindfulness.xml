@@ -18,77 +18,101 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
-        android:paddingVertical="50dp">
+        android:paddingVertical="5dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:fontFamily="@font/roboto_mono"
             android:padding="16dp"
             android:text="Breathing Exercise "
             android:textAlignment="center"
             android:textColor="@color/colorDark"
-            android:textSize="20sp"
-            android:layout_gravity="center_horizontal" />
+            android:textSize="20sp" />
 
         <ImageButton
             android:id="@+id/breathing_button"
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/button"
+            android:elevation="4dp"
             android:fontFamily="@font/roboto_mono"
             android:scaleType="centerCrop"
-            android:background="@color/button"
             android:src="@drawable/relax"
-            android:elevation="4dp"
             android:text="Play Video" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:fontFamily="@font/roboto_mono"
-            android:padding="16dp"
+            android:padding="10dp"
             android:text="Play to Relax your mind"
             android:textAlignment="center"
             android:textColor="@color/colorDark"
-            android:textSize="20sp"
-            android:layout_gravity="center_horizontal" />
+            android:textSize="20sp" />
 
         <ImageButton
             android:id="@+id/play"
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/red"
+            android:elevation="4dp"
             android:fontFamily="@font/roboto_mono"
             android:scaleType="centerCrop"
             android:src="@drawable/play"
-            android:elevation="4dp"
-            android:text="Play Video"
-            android:background="@color/red"/>
+            android:text="Play Video" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_mono"
+            android:gravity="center_horizontal"
             android:padding="16dp"
             android:text="Start a Yoga Session"
             android:textAlignment="center"
             android:textColor="@color/colorDark"
-            android:textSize="20sp"
-            android:gravity="center_horizontal" />
+            android:textSize="20sp" />
 
         <ImageButton
             android:id="@+id/yoga"
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@color/red"
+            android:elevation="5dp"
             android:fontFamily="@font/roboto_mono"
             android:scaleType="centerCrop"
             android:src="@drawable/yoga_but"
+            android:text="Start Yoga" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_mono"
+            android:gravity="center_horizontal"
+            android:padding="18dp"
+            android:text="Grounding Excerise"
+            android:textAlignment="center"
+            android:textColor="@color/colorDark"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/ground"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:background="@color/red"
             android:elevation="4dp"
-            android:text="Start Yoga"
-            android:background="@color/red"/>
+            android:fontFamily="@font/roboto_mono"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ground"
+            android:text="Start Yoga" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
