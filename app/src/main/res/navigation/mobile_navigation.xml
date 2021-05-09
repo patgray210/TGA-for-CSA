@@ -35,5 +35,11 @@
         android:label="@string/Mindfulness"
         tools:layout="@layout/fragment_mindfulness" />
 
+    <fragment
+        android:id="@+id/GameInstructions"
+        android:name="com.example.final_check.ui.GameInstructions.fragment_InstructionActivity"
+        android:label="@string/game_instructions_button"
+        tools:layout="@layout/activity_instruction" />
+
 
 </navigation>

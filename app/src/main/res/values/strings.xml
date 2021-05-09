@@ -38,6 +38,25 @@
 
     <string name="question">How do you know when you feel worried?</string>
 
+    <string name="game_instructions_body">As players move around the board, they will roll a die and move through the game based on the number that appears with each roll. Based on the die, players will land on a variety of categories. Players will answer the question or complete the action associated with the corresponding space. Clients are welcome to skip cards or actions that are not relevant or that they are not ready to address.</string>
+    <string name="game_instructions_button">Game Instructions</string>
+
+    <string name="game_Object_button">Object of the Game</string>
+    <string name="game_Object_body">As each player moves through the game, points will be collected for each question card or action. The first player to gain a certain number of points (set by clinician) wins.</string>
+
+    <string name="game_ToStart_button">To Start</string>
+    <string name="game_ToStart_body">The game is designed to allow clinicians to tailor the game to their client’s needs as well as adjust for client input.</string>
+
+    <string name="game_SafteyConcerns_button">Safety Concerns</string>
+    <string name="game_SafetyConcerns_body">This game is meant to be used by trauma informed and healing centered mental health clinicians. This game should only be introduced after sufficient rapport between therapist and clinician have been built. 
+    If the client is skipping numerous question cards or expressing discomfort, shifts in question card categories or reintroducing the game once more rapport and trust have been built may be necessary.
+    </string>
+    
+    <string name="game_ClinicianPart_button">Clinician participation</string>
+    <string name="game_ClinicianPart_body">Clinicians are expected to participate and play “The Game for CSA” with the client. However, clinicians should make it clear within the question card categories that they are answering within their clinical experience of what child survivors may be challenged with.
+    Therapists who are survivors: It is not necessary or indicated for therapists to share their personal experiences with trauma or abuse in this game. Again, clinicians should be clear with the client that their responses are based on their clinical experiences/research/training. The decision to disclose any personal information should always be based on clinical goals and benefit to the client, rather than the clinician’s personal needs.
+    </string>
+
     <string-array name="categories">
         <item>Anxiety</item>
         <item>Anger</item>
